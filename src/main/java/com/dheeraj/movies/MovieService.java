@@ -15,7 +15,7 @@ public class MovieService {
     public List<Movie> allMovies() {
         return movieRepository.findAll();
     }
-    
+
     public Optional<Movie> singleMovie(String imdbId) {
         return movieRepository.findMovieByImdbId(imdbId);
     }
